@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http'; // Http requests to our API become available
+import { HttpClientModule } from '@angular/common/http'; // Http requests to our API become available
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,8 +13,8 @@ import { AppComponent } from './app.component';
   imports: [ // We can use these Modules in our app
     BrowserModule, // for browser-based app
     AppRoutingModule,
-    HttpClientModule // 
-
+    HttpClientModule, // 
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent] // bootstrapping our app
