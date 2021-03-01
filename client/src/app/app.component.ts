@@ -16,8 +16,9 @@ export class AppComponent implements OnInit { // OnInit: interface in order to i
     this.getUsers();
   }
 
+  // από πού θα πάρω data
   getUsers() {
-    this.http.get('https//localhost:5001/api/users').subscribe(response => { // subscribe: async
+    this.http.get('https://localhost:5001/api/users').subscribe(response => { // subscribe: async
       this.users = response;
     }, error => {
       console.log(error);
@@ -25,4 +26,4 @@ export class AppComponent implements OnInit { // OnInit: interface in order to i
   }
 }
 
-// arrow functions
+   
